@@ -1,0 +1,181 @@
+<?php
+session_start();
+?>
+            <!doctype html>
+            <html lang="en">
+                <head>
+                        <title>Subscription- Best Offers</title>
+                        <!-- Required meta tags -->
+                        <meta charset="utf-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            
+                        <!-- Bootstrap CSS -->
+                        <script src="https://kit.fontawesome.com/2aeffcb656.js" crossorigin="anonymous"></script>
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+                        <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+                        <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js'></script>
+                        <link rel="preconnect" href="https://fonts.gstatic.com">
+                        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+                        <link rel="stylesheet" href="css/best offers.css?v=<?php echo time();?>">
+                        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                </head>
+            
+                <body>
+                  
+                    <!-- Optional JavaScript -->
+                    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+                    <nav class="topnav navbar navbar-expand-md bg-light navbar-light">
+                        <div class="container">
+                        <a class="navbar-brand" href="index.php">Car E Rental</a>
+                        <ul class="navbar-nav">
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="faq.php">FAQ/ Contact Us</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="rentals.php">Rentals</a>
+                        </li>
+                        <li class="nav-item"> 
+                            <a class="nav-link active" href="subscription-main.php">Subscription</a>
+                        </li>
+                        <?php  if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin']!=true){
+                        echo '<li class="nav-item"> 
+                            <a class="nav-link" href="login.php">Login/ Sign Up</a></li>';}
+                        else{echo '<li class="nav-item"> <div class="dropdown"><button class="dropbtn">&#128101;'.$_SESSION['username'].'</button>
+                            <div class="dropdown-content"><a class="nav-link" href="user-details.php?id='.$_SESSION['user_id'].'" >Profile</a><a class="nav-link" href="logout.php">Logout</a></div>
+                            </div></li>';
+                        }?>
+                        </ul>
+                    </div>
+                    </nav>
+            
+                    <div class="wrapper-grey padded">
+                        <div class="container">
+                          <h2 class="text-center">Best Offers</h2>
+                          <div class= "row">
+                                <div class="col-xs-6 col-sm-6">
+                                    <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),url('Images/car\ coupon\ 1.jpg');">
+                                        
+                                        <div class="card-description">
+                                            <div class="row">
+                                                <div class="col-10" >  
+                                                <h2>Promo Code:<span id="myInput">LUCKY1000</span></h2>
+                                                </div>
+                                                <div class="col-2"><a class="btn-outline-light" href="#"onclick="myFunction()" onmouseout="outFunc()"><i class="far fa-copy fa-3x"></i></a></div>
+                                                </div> 
+                                            <p>Validity:December,2021</p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6">
+                                    <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),url('Images/carcoupon2.jpg');">
+                                        <div class="card-description">
+                                            <div class="row">
+                                                <div class="col-10" >  
+                                                <h2>Promo Code:<span id="myInput">WOW70</span></h2>
+                                                </div>
+                                                <div class="col-2"><a class="btn-outline-light" href="#"onclick="myFunction()" onmouseout="outFunc()"><i class="far fa-copy fa-3x"></i></a></div>
+                                                </div> 
+                                        <p>Validity: 30th June</p>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                         </div>
+                            <div class= "row">
+                                <div class="col-xs-6 col-sm-6">
+                                    <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),url('Images/special_offer.jpg');">
+                                    
+                                    <div class="card-description">
+                                        <div class="row">
+                                            <div class="col-10" >  
+                                            <h2>Promo Code:<span id="myInput">ALMASTER2000</span></h2>
+                                            </div>
+                                            <div class="col-2"><a class="btn-outline-light" href="#"onclick="myFunction()" onmouseout="outFunc()"><i class="far fa-copy fa-3x"></i></a></div>
+                                            </div> 
+                                        <p>Validity:30th June</p>
+                                    </div>
+                                    
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6">
+                                    <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),url('Images/gifts.jpg');">
+                                    <div class="card-description">
+                                        <div class="row">
+                                            <div class="col-10" >  
+                                            <h2>Promo Code:<span id="myInput">ZOOMJOY</span></h2>
+                                            </div>
+                                            <div class="col-2"><a class="btn-outline-light" href="#"onclick="myFunction()" onmouseout="outFunc()"><i class="far fa-copy fa-3x"></i></a></div>
+                                            </div> 
+                                        <p>Validity:30th June</p>
+                                    </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>      
+                            <div class= "row">
+                                <div class="col-xs-6 col-sm-6">
+                                    <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),url('Images/coupon3.jpg');">
+                                    
+                                    <div class="card-description">
+                                        <div class="row">
+                                            <div class="col-10" >  
+                                            <h2>Promo Code:<span id="myInput">HURRAY60</span></h2>
+                                            </div>
+                                            <div class="col-2"><a class="btn-outline-light" href="#"onclick="myFunction()" onmouseout="outFunc()"><i class="far fa-copy fa-3x"></i></a></div>
+                                            </div> 
+                                        <p>Validity:15th May</p>
+                                    </div>
+                                    
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6">
+                                    <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),url('Images/gift\ cards.jpeg');">
+                                        <div class="card-description">
+                                            <div class="row">
+                                            <div class="col-10" >  
+                                            <h2>Promo Code:<span id="myInput">GORIDE50</span></h2>
+                                            </div>
+                                            <div class="col-2"><a class="btn-outline-light" href="#"onclick="myFunction()" onmouseout="outFunc()"><i class="far fa-copy fa-3x"></i></a></div>
+                                            </div> 
+                                            <p>Validity:30th April</p>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+                      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+                      <script>
+                        function myFunction() {
+                          var copyText = document.getElementById("myInput");
+                          copyText.select();
+                          copyText.setSelectionRange(0, 99999);
+                          document.execCommand("copy");
+                          
+                          var tooltip = document.getElementById("myTooltip");
+                          tooltip.innerHTML = "Copied: " + copyText.value;
+                        }
+                        
+                        function outFunc() {
+                          var tooltip = document.getElementById("myTooltip");
+                          tooltip.innerHTML = "Copy to clipboard";
+                        }
+                        </script>
+                        
+            <footer>
+                        <div class="panel-footer" style="background-color:black;"><center>
+                            <p style="color:#F4EEED">Copyright@2021 Car E Rental</p>
+                            <p style="color:#F0C929">All Rights Reserved</p></center>
+                        </div>
+                    </footer>
+                </body>
+            </html>

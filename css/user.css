@@ -1,0 +1,209 @@
+*{
+    
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    background-color: #ffffff;
+    border-bottom:#F4EEED ;
+    
+}
+.bg-dark{
+    background-color: #ffffff !important;
+}
+.nav-item .nav-link, .navbar-light .navbar-nav{
+    color:black !important;
+    margin:1px;
+    
+}
+.topnav a{
+    border-bottom: 3px solid transparent;
+}
+.topnav a:hover {
+    border-bottom: 3px solid #F0C929;
+  }
+  
+  .topnav a.active {
+    border-bottom: 3px solid #F0C929;
+  }
+  * {box-sizing: border-box;}
+.dropbtn {
+    background-color: #F0C929;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd; border-bottom: 3px solid transparent !important;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #F0C929;}
+
+.main ,.banner,.form{
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1.3s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+.change{
+    cursor:pointer;
+    transition: all .2s ease-in-out;
+    outline:none;
+    background-color: #F0C929;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    margin:10px;
+}
+.change:hover{
+    transform: scale(1.1);
+}
+.banner{
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-30px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-30px); }
+}
+button:focus{
+    outline:none;
+    border:none;
+}
+/*input[type=email],input[type=month],input[type=tel]{
+    background-color: #F4EEED;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border:none;
+    border-radius: 20px;
+    width:50%;
+  }
+
+input:focus{
+    outline: none;
+}*/
+.wrapper{
+    background-color: #F0C929;
+    padding:90px;
+    margin-top:60px;
+    height:280px;
+}
+.btn1{
+    border-radius: 20px;
+    color:#F0C929 !important;
+    background-color: black;
+    padding: 15px 32px;
+    margin-top: 10px;
+    margin-right: 60px;
+}
+/* Update page*/
+#file {
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+  }
+  .file-input label {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #F0C929;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    cursor: pointer;
+    transition: transform .2s ease-out;
+  }
+ /*checkout*/
+ .loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #149c1f;
+    border-bottom: 16px solid #149c1f;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  } 
+footer{
+    background-color: black;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    text-align:center;
+    padding-top:15px;  
+    
+}
+#foo1 {
+    color:white;
+}
+#foo2{
+   color: #F0C929 ;
+}
+html,body{
+    width:100%;
+    
+}
+html {
+    scroll-behavior: smooth;
+  }
+  
