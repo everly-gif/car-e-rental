@@ -27,7 +27,8 @@ consuming less time.</li>
 <li> Extensive regular deals and offers.<br><br></li>
 </ul>
 
-<!--<h2 align="center">🎞Project Demo Video</h2>-->
+<h2 align="center">🎞Project Demo Video</h2>
+https://drive.google.com/file/d/1SRaxGLMrJHuc20ceZrpxO1-bsKyHOzwT/view?usp=sharing
 
 ## 📃 Current Checklist 
 - [x] UI Design/ Front-end
