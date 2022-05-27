@@ -92,7 +92,15 @@ Other option is to directly download it.
 
 -->
 ## 🙌 Contributors
-@everly-gif<br>
-@vb6539<br>
-@Kaviyashre<br>
+
+<div align="center">
+<table>
+  <tbody><tr>
+     <td align="center"><a href="https://github.com/everly-gif"><img alt="https://avatars.githubusercontent.com/u/77877486?v=4" src="https://avatars.githubusercontent.com/u/77877486?v=4" width="130px;"><br><sub><b>Everly Precia Suresh</b></a></td>
+    <td align="center"><a href="https://github.com/vb6539"><img alt="https://avatars.githubusercontent.com/u/80880872?v=4" src="https://avatars.githubusercontent.com/u/80880872?v=4" width="130px;"><br><sub><b>Vivek Singh Baghel </b></sub></a></td>
+    <td align="center"><a href="https://github.com/RPK2103"><img alt="https://avatars.githubusercontent.com/u/60558428?v=4" src="https://avatars.githubusercontent.com/u/60558428?v=4" width="130px;"><br><sub><b>Kaviyashre Ragupathy</b></sub></a></td>
+  </tr>
+  
+</tbody></table>
+</div>
 
